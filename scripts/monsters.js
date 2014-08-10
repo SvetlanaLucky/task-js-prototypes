@@ -18,8 +18,12 @@ Monster.prototype.sayName=function(){
 };
 
 Monster.prototype.wound=function(Enemy){
-    Enemy.currentHealth-=5;
-    console.log(this.name, "damaged", Enemy.name);
+    if(Enemy.currentHealth>0){
+        Enemy.currentHealth-=5;
+        console.log(this.name, "damaged", Enemy.name);
+    }
+    else
+    console.log( Enemy.name, "is dead");
 }; //возникла сложность при переопределении для разных прототипов - в связи с разным уровнем повреждений :(
 
 function CatMonster (){
@@ -39,8 +43,11 @@ function BirdMonster(name, health){
 }
 BirdMonster.prototype=Object.create(Monster.prototype);
 BirdMonster.prototype.peck=function(Enemy){
+    if(Enemy.currentHealth>0){
     Enemy.currentHealth-=3;
     console.log(this.name, "damaged", Enemy.name);
+    }
+    else console.log( Enemy.name, "is dead");
 };
 
 var cat1=new CatMonster("cat1");
@@ -61,3 +68,8 @@ cat1.scratch(bird1);
 console.log(bird1.currentHealth);
 bird2.peck(cat2);
 console.log(cat2.currentHealth);
+var i;
+for(i=0;i<12;i++){
+    cat1.scratch(bird1);
+    console.log(bird1.currentHealth);
+}

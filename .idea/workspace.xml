@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc77d8b-34a0-42ee-8e2a-fddff6674d5f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/monsters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/monsters.js" afterPath="$PROJECT_DIR$/scripts/monsters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="task-js-prototypes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -11,7 +11,7 @@
     <file path="/index.html" changelist="9dc77d8b-34a0-42ee-8e2a-fddff6674d5f" time="1407685067972" ignored="false" />
     <file path="D:/!Programming/practice web/sut/sut.js" changelist="9dc77d8b-34a0-42ee-8e2a-fddff6674d5f" time="1407685350945" ignored="false" />
     <file path="/sut.js" changelist="9dc77d8b-34a0-42ee-8e2a-fddff6674d5f" time="1407685348330" ignored="false" />
-    <file path="/monsters.js" changelist="9dc77d8b-34a0-42ee-8e2a-fddff6674d5f" time="1407704675301" ignored="false" />
+    <file path="/monsters.js" changelist="9dc77d8b-34a0-42ee-8e2a-fddff6674d5f" time="1407705783813" ignored="false" />
     <file path="/a.dummy" changelist="9dc77d8b-34a0-42ee-8e2a-fddff6674d5f" time="1407686272508" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +35,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="36" selection-start="126" selection-end="126" vertical-scroll-proportion="-3.9230769">
+            <state line="3" column="12" selection-start="42" selection-end="42" vertical-scroll-proportion="-1.9615384">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="monsters.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/monsters.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="52" selection-start="967" selection-end="967" vertical-scroll-proportion="0.028286189">
+            <state line="71" column="12" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.7737105">
               <folding>
                 <element signature="n#!!doc;n#Monster#0" expanded="false" />
               </folding>
@@ -150,6 +150,13 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -247,14 +254,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="126" selection-end="126" vertical-scroll-proportion="-3.9230769">
+        <state line="3" column="12" selection-start="42" selection-end="42" vertical-scroll-proportion="-1.9615384">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/monsters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="52" selection-start="967" selection-end="967" vertical-scroll-proportion="0.028286189">
+        <state line="71" column="12" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.7737105">
           <folding>
             <element signature="n#!!doc;n#Monster#0" expanded="false" />
           </folding>
