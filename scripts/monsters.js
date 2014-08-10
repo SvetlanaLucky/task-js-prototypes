@@ -6,45 +6,49 @@
  * To change this template use File | Settings | File Templates.
  */
 
-function Monster(name, health, currentHealth){
+function Monster(name){
     this.name=name;
-    this.health=health;
-    this.curreHealth=currentHealth;
-    //я подозреваю что health и currentHealth стоит убрать из базового объекта
-    //потому что их всё равно приходится переопределять в прототипах
 }
 Monster.prototype.sayName=function(){
     console.log("My name is ", this.name);
 };
 
-Monster.prototype.wound=function(Enemy){
-    if(Enemy.currentHealth>0){
-        Enemy.currentHealth-=5;
-        console.log(this.name, "damaged", Enemy.name);
-    }
-    else
-    console.log( Enemy.name, "is dead");
-}; //возникла сложность при переопределении для разных прототипов - в связи с разным уровнем повреждений :(
+//Monster.prototype.wound=function(Enemy){
+//    if(Enemy.currentHealth>0){
+//        Enemy.currentHealth-=this.damage;
+//        console.log(this.name, "damaged", Enemy.name);
+//    }
+//    else
+//    console.log( Enemy.name, "is dead");
+//}; //возникла сложность при переопределении для разных прототипов - в связи с разным уровнем повреждений :(
 
 function CatMonster (){
     Monster.apply(this, arguments);
     this.health=50;
     this.currentHealth=50;
+    this.damage=5;
 }
 
 CatMonster.prototype=Object.create(Monster.prototype);
-CatMonster.prototype.scratch=Monster.prototype.wound.bind(CatMonster);
+//CatMonster.prototype.scratch=Monster.prototype.wound.bind(CatMonster);
+CatMonster.prototype.scratch=function(Enemy){
+    if(Enemy.currentHealth>0){
+        Enemy.currentHealth-=this.damage;
+        console.log(this.name, "damaged", Enemy.name);
+    }
+    else console.log( Enemy.name, "is dead");
+};
 
-
-function BirdMonster(name, health){
-    Monster.call(this, name, health);
+function BirdMonster(name, health, damage){
+    Monster.call(this, name, health, damage);
     this.health=60;
     this.currentHealth=60;
+    this.damage=3;
 }
 BirdMonster.prototype=Object.create(Monster.prototype);
 BirdMonster.prototype.peck=function(Enemy){
     if(Enemy.currentHealth>0){
-    Enemy.currentHealth-=3;
+    Enemy.currentHealth-=this.damage;
     console.log(this.name, "damaged", Enemy.name);
     }
     else console.log( Enemy.name, "is dead");
